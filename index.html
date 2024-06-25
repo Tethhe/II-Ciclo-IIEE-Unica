@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduccion a la informatica</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/backgraund.css">
+    <link rel="stylesheet" href="/css/slider.css">
+</head>
+<body>
+    <nav>
+        <div class="top-top-menu">
+          <div class="top-top-menu-info1">
+            <p><b>Mi Numero: </b> +51 918 514 845 <b>Correo: </b> 23280022@unica.edu.pe</p>
+          </div>
+          <div class="top-top-menu-info2">
+            <p id="fecha-hora"></p>
+            <script>
+              function actualizarFechaHora() {
+                const fechaHoraElement = document.getElementById("fecha-hora");
+                const ahora = new Date();
+                const opciones = {
+                  weekday: "long",
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  second: "2-digit",
+                };
+                const fechaHoraFormateada = ahora.toLocaleDateString("es-ES", opciones);
+                fechaHoraElement.textContent = fechaHoraFormateada;
+              }
+              setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+              actualizarFechaHora();
+    
+            </script>
+          </div>
+          <div class="pags">
+            <div>
+              <a href="html/pag1.html"><img src="/images/gordon Freman.png" class="links-externos"></a>
+              <a href="html/pag2.html"><img src="/images/waifu.jpeg" class="links-externos"></a>
+              <a href="html/pag3.html"><img src="/images/yo y la mochila.png" class="links-externos"></a>
+            </div>
+          </div>
+        </div>
+        <div class="header">
+          <div class="logo"><a href="index.html">
+            <img src="/images/Papu sad.png" alt="Logo-inicio" /></a>
+          </div>
+          <div class="top-menu">
+            <ul class="nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li>
+                <a href="Tarea.html">Tareas</a>
+              </li>
+              <li>
+                <a href="multimedia.html">Multimedia </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="slider">
+        <div class="slides">
+          <ul>
+            <li><img src="/images/firstback.jpg" alt=""></li>
+            <li><img src="/images/secondback.PNG" alt=""></li>`
+            <li><img src="/images/background3.jpeg" alt=""></li>
+            <li><img src="/images/background4.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>

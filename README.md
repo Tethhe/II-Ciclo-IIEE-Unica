@@ -1,2 +1,2 @@
-# II-Ciclo-IIEE-Unica.github.io
+# II-Ciclo-IIEE-Unica
 introduction a la informatica 
